@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 jobs:
   build-image:
-    runs-on: ubuntu-22-04
+    runs-on: local-system
     steps:
       - run: echo $MESSAGE
       - run: docker build -t flask:${{ github.head_ref }} -f docker/Dockerfile
