@@ -9,4 +9,7 @@ jobs:
     steps:
       - run: echo ${{ secrets.MESSAGE }}
       - run: echo -e "GITHUB_ref:${{github.ref}}\nGITHUB_API_URL:${{github.api_url}}\nGITHUB_REF_NAME:${{github.ref_name}}\nGITHUB_ACTOR:${{github.actor}}\nGITHUB_SHA:${{github.sha}}"
-      - run: docker build -t flask:${{github.sha}} -f docker/Dockerfile
+      - name: Generating tag name.
+        run: DOCKER_IMAGE_TAG=`echo ${{github.sha}} | cut -c 1-8`
+      - name: Building flask app image.
+        run: docker build -t flask:$DOCKER_IMAGE_TAG -f docker/Dockerfile .
