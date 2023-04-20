@@ -3,7 +3,7 @@ run-name: ${{ github.head_ref }}
 on: [push]
 jobs:
   build-image:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22-04
     steps:
       - run: ${{ MESSAGE }}
       - run: docker build -t flask:${{ github.head_ref }} -f docker/Dockerfile
