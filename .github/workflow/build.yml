@@ -5,4 +5,5 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     steps:
+      - run: ${{ MESSAGE }}
       - run: docker build -t flask:${{ github.head_ref }} -f docker/Dockerfile
