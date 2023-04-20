@@ -9,7 +9,13 @@ jobs:
     steps:
       - run: echo ${{ secrets.MESSAGE }}
       - run: echo -e "GITHUB_ref:${{github.ref}}\nGITHUB_API_URL:${{github.api_url}}\nGITHUB_REF_NAME:${{github.ref_name}}\nGITHUB_ACTOR:${{github.actor}}\nGITHUB_SHA:${{github.sha}}"
+      - name: Checkout Git
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          repository: git@github.com:abhishekchauhan98/flask-app.git
       - name: Building flask app image.
         run: |
           DOCKER_IMAGE_TAG=`echo ${{github.sha}} | cut -c 1-8`
+          ls
           docker build -t flask:$DOCKER_IMAGE_TAG -f docker/Dockerfile .
