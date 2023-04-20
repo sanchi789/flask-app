@@ -8,4 +8,4 @@ jobs:
     runs-on: local-system
     steps:
       - run: echo ${{ secrets.MESSAGE }}
-      - run: docker build -t flask:${{github.head_ref}} -f docker/Dockerfile
+      - run: docker build -t flask:${{github.ref}} -f docker/Dockerfile
