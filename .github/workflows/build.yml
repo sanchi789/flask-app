@@ -1,5 +1,4 @@
 name: building image
-# run-name: Building -${{ github.head_ref }} by @${{ github.actor }}
 on: 
   push:
     branches: [ "main" ]
