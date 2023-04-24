@@ -1,5 +1,5 @@
 name: building image
-run-name: "Build | ${{ github.head_ref }}" 
+run-name: Build||${{ github.head_ref }}
 on: 
   push:
     branches: [ "main" ]
