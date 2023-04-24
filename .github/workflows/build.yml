@@ -8,7 +8,7 @@ jobs:
     runs-on: local-system
     steps:
       - run: echo ${{ secrets.MESSAGE }}
-      - run: echo -e "GITHUB_ref:${{github.ref}}\nGITHUB_API_URL:${{github.api_url}}\nGITHUB_REF_NAME:${{github.ref_name}}\nGITHUB_ACTOR:${{github.actor}}\nGITHUB_SHA:${{github.sha}}"
+      - run: echo -e "GITHUB_ref:${{github.ref}}\nGITHUB_API_URL:${{github.api_url}}\nGITHUB_REF_NAME:${{github.ref_name}}\nGITHUB_ACTOR:${{github.actor}}\nGITHUB_SHA:${{github.sha}}\nGITHUB_HEAD_REF:${{ github.head_ref }}"
       - run: echo ${{ github }}
       - name: Checkout Git
         uses: actions/checkout@v2
