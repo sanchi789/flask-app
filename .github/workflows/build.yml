@@ -1,9 +1,9 @@
 name: building image
-on: 
-  push:
-    branches: [ "main" ]
-    paths:
-      - src/**
+# on: 
+#   push:
+#     branches: [ "main" ]
+#     paths:
+#       - src/**
 jobs:
   build-image:
     runs-on: local-system
