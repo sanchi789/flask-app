@@ -1,6 +1,6 @@
-            appName: san
+#             appName: san
             dockerRepoUrl: 565478867353.dkr.ecr.ap-south-1.amazonaws.com
-            dockerFilePath: /var/lib/jenkins/workspace/new_main/docker/Dockerfile
+#             dockerFilePath: /var/lib/jenkins/workspace/new_main/docker/Dockerfile
             helmRepoLink: git@github.com:sanchi789/helm.git
             valuesFilePath: /var/lib/jenkins/workspace/new_main/values.yaml
             gitSecret: q1s
