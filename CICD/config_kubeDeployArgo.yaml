@@ -1,2 +1,2 @@
-    appName: san
-    dockerFilePath: /var/lib/jenkins/workspace/new_main/docker/Dockerfile
+appName: san
+dockerFilePath: /var/lib/jenkins/workspace/new_main/docker/Dockerfile
