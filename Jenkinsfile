@@ -5,4 +5,4 @@
 // kubeDeployPipeline()
 @Library('shared_lib') _
 // kubeDeployArgoPipeline("config.yaml","CICD/config_kubeDeployArgo.yaml")
-kubeDeployArgoPipeline()
+kubeDeployArgoPipeline("main")
