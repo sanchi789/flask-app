@@ -1,2 +1,2 @@
 appName: san
-dockerFilePath: docker/dockerfile
+dockerFilePath: docker/Dockerfile
