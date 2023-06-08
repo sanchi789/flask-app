@@ -1,3 +1,2 @@
 appName: san
 dockerFilePath: docker/dockerfile
-# //config-kubeDeployArgo.yaml
