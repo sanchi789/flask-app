@@ -1,2 +1,2 @@
-appName: san
-dockerFilePath: docker/Dockerfile
+appName: san    #This parameter is optional 
+dockerFilePath: docker/Dockerfile   #This parameter is optional 
