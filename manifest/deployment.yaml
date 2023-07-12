@@ -21,3 +21,4 @@ spec:
         image: nginx:182110b
         ports:
         - containerPort: 80
+
