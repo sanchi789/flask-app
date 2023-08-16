@@ -2,4 +2,5 @@
 // kubeDeployArgoPipeline()
 //deploymentType()
 //kubeDeployPipeline()
-ecsOnboarding()
+// ecsOnboarding()
+kubeDeployArgoPipeline()
