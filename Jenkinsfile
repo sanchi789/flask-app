@@ -3,4 +3,4 @@
 //deploymentType()
 //kubeDeployPipeline()
 // ecsOnboarding()
-kubeDeployArgoPipeline('git@github.com:sanchi789/helm.git','main','for_jenkins_ssh')
+ecsOnboarding('git@github.com:sanchi789/helm.git','main','for_jenkins_ssh')
