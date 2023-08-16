@@ -1,4 +1,5 @@
 @Library('shared_lib') _
-kubeDeployArgoPipeline()
+// kubeDeployArgoPipeline()
 //deploymentType()
 //kubeDeployPipeline()
+ecsOnboarding()
