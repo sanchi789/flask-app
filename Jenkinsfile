@@ -1,4 +1,4 @@
-@Library('shared_lib') _
+@Library('git-shared-lib') _
 // kubeDeployArgoPipeline()
 //deploymentType()
 //kubeDeployPipeline()
